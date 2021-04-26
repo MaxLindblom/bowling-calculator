@@ -1,0 +1,29 @@
+{
+  "name": "bowling-calculator",
+  "version": "1.0.0",
+  "description": "Code challenge for GetAccept",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "build": "cd client && yarn install && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxLindblom/bowling-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxLindblom/bowling-calculator/issues"
+  },
+  "homepage": "https://github.com/MaxLindblom/bowling-calculator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react-redux": "^7.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
