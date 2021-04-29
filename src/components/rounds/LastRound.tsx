@@ -1,9 +1,10 @@
 import { Component } from "react";
-import { FirstBall } from "./ball-fields/FirstBall";
-import { SecondBall } from "./ball-fields/SecondBall";
+import { FirstBall } from "../ball-fields/FirstBall";
+import { SecondBall } from "../ball-fields/SecondBall";
+import { ThirdBall } from "../ball-fields/ThirdBall";
 import { Box } from "@material-ui/core";
 
-export class Round extends Component {
+export class LastRound extends Component {
   render() {
     return (
       <Box
@@ -16,6 +17,7 @@ export class Round extends Component {
         <div className="row">
           <FirstBall></FirstBall>
           <SecondBall></SecondBall>
+          <ThirdBall></ThirdBall>
         </div>
         <div>
           <Box component="span" p={1} display="block">

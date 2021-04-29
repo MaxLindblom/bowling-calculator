@@ -1,5 +1,6 @@
 import { Component } from "react";
-import { Round } from "./Round";
+import { Round } from "./rounds/Round";
+import { LastRound } from "./rounds/LastRound";
 
 export class Series extends Component {
   makeRounds() {
@@ -11,6 +12,11 @@ export class Series extends Component {
   }
 
   render() {
-    return <div className="row">{this.makeRounds()}</div>;
+    return (
+      <div className="row">
+        {this.makeRounds()}
+        <LastRound></LastRound>
+      </div>
+    );
   }
 }
