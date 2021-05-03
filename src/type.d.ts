@@ -28,3 +28,5 @@ type BallAction = {
 type SeriesState = {
   series: Series;
 };
+
+type DispatchType = (args: BallAction) => BallAction;
