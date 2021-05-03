@@ -1,17 +1,30 @@
 /**
  * One frame of a series
  */
-interface IFrame {
-  // Hehe, naming
-  first: Ball;
-  second: Ball;
+type Frame = {
+  first?: Ball;
+  second?: Ball;
   third?: Ball;
-}
+};
 
 /**
  * One series
  */
-interface ISeries {
-  frames: IFrame[];
+type Series = {
+  frames: Frame[];
+  round: number;
   score: number;
-}
+};
+
+/**
+ * Redux types
+ */
+
+type BallAction = {
+  type: string;
+  ball: Ball;
+};
+
+type SeriesState = {
+  series: Series;
+};
