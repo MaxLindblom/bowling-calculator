@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Series } from "./components/Series";
+import Series from "./components/Series";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { FirstBall } from "../ball-fields/FirstBall";
+import FirstBall from "../ball-fields/FirstBall";
 import { SecondBall } from "../ball-fields/SecondBall";
 import { Box } from "@material-ui/core";
 
@@ -14,7 +14,7 @@ export class Round extends Component {
         m={0.5}
       >
         <div className="row">
-          <FirstBall></FirstBall>
+          <FirstBall isDisabled={false}></FirstBall>
           <SecondBall></SecondBall>
         </div>
         <div>
